@@ -1,0 +1,16 @@
+# Клон
+git clone https://github.com/<your-username>/day-27-staking-rewards-calculator.git
+cd day-27-staking-rewards-calculator
+
+# Python 3.10+
+python3 staker.py -h
+
+\
+-p, --principal    Початкова сума (float)
+-a, --apr          APR у відсотках (float), напр. 8
+-d, --days         Тривалість у днях (int)
+-c, --compounding  Режим: simple|daily|weekly|monthly|continuous
+-t, --tax          Податок на дохід у %, напр. 19 (optional, default 0)
+-f, --fee          Комісія/втрати у %, напр. 0.5 (optional, default 0)
+--json             Вивести результат у JSON
+--csv PATH         Зберегти міні-таблицю по віхах (30/90/180/365) у CSV
